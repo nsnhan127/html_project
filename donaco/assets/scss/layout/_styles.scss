@@ -1,0 +1,163 @@
+body {
+  @include myscrollbar;
+}
+.container{
+  @include minscreenw (1200px){
+    width: 1100px;
+    max-width: 1100px;
+  }
+}
+.full-width {
+    width: 100%!important;
+}
+.txt-normal{
+  font-size: 18px;
+  color: #fff;
+  line-height: 21px;
+  font-weight: 700;
+  margin: 0;
+}
+.theme-blue {
+  background-color: #034ea2!important;
+  color: #fff!important;
+
+  h3 {
+    color: #fff!important;
+  }
+
+  .triangle {
+    border-color: #034ea2!important;
+  }
+}
+.ovh{
+  overflow: hidden !important;
+  &::before{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.h3, h3 {
+    font-size: 27px;
+    font-weight: 200;
+    color: #000;
+}
+.h4, .login-form__label, h4 {
+    font-size: 24px;
+    font-weight: 300;
+    color: #000;
+}
+.section {
+  padding-bottom: 30px;
+    @include mydevice (mobile){
+      margin-bottom: 30px !important;
+    }
+}
+
+.gallery-home {
+  .item{
+    img{
+      width: 100%;
+    }
+  }
+  .item__txt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    &_1,
+    &_2,
+    .btn_gr {
+      visibility: hidden;
+
+      &.vis {
+        visibility: visible !important;
+      }
+    }
+
+    &_1 {
+      font-size: 50px;
+      font-weight: 700;
+      @include mydevice(mobile) {
+        font-size: 30px;
+      }
+      @include mydevice(phone) {
+        font-size: 16px;
+      }
+    }
+
+    &_2 {
+      font-size: 34px;
+      @include mydevice(mobile) {
+        font-size: 24px;
+      }
+      @include mydevice(phone) {
+        font-size: 12px;
+      }
+    }
+
+    .btn_gr {
+      margin-top: 24px;
+      @include mydevice(phone) {
+        margin-top: 12px;
+      }
+    }
+
+    .mybtn {
+      border-color: #fff;
+      color: #fff;
+      // font-size: 24px;
+      background: none;
+      padding: 0.5em 2em;
+
+      &:hover {
+        background-color: $site-color-1;
+        color: #fff;
+        border-color: $site-color-1;
+      }
+      @include mydevice(mobile) {
+        font-size: 16px;
+      }
+      @include mydevice(phone) {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .owl-nav {
+    visibility: hidden;
+    transition: all 0.5s;
+    @include mydevice(mobile) {
+      display: none;
+    }
+    .owl-next,
+    .owl-prev {
+    //  width: 46px;
+      //height: 70px;
+    }
+
+    .owl-prev {
+      left: 2%;
+      //background-image: url("../images/arrow_left_2.png");
+    }
+
+    .owl-next {
+      right: 2%;
+      //background-image: url("../images/arrow_right_2.png");
+    }
+  }
+
+  &:hover {
+    .owl-nav {
+      visibility: visible;
+    }
+  }
+}

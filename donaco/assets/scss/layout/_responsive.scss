@@ -1,0 +1,12 @@
+.only-show-mobile {
+  display: none;
+  @include mydevice(mobile) {
+    display: initial;
+  }
+}
+
+.hide-on-mobile {
+  @include mydevice(mobile) {
+    display: none;
+  }
+}
