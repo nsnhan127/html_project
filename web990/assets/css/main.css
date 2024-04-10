@@ -10117,6 +10117,7 @@ a:focus {
 }
 #homePage .section_1 .top-search .slide-banner {
   overflow: hidden;
+  max-height: 100vh;
   margin-bottom: 20px;
 }
 .isPhone #homePage .section_1 .top-search .slide-banner {
@@ -10180,7 +10181,7 @@ a:focus {
 }
 #homePage .section_1 .top-search .slide-banner .item .interact {
   position: absolute;
-  bottom: 40%;
+  bottom: 60%;
   right: 20%;
   z-index: 1;
 }
