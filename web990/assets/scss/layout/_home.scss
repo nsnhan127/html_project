@@ -1322,61 +1322,10 @@ a {
       }
     }
   }
-
-  &.hover-effect {
-    &:hover {
-      .image {
-        &::before {
-          height: 100%;
-        }
-      }
-
-      .text {
-        .title {
-          color: $third-color;
-        }
-
-        .detail {
-          p {
-            color: #fff;
-          }
-        }
-
-        &::after {
-          height: 100%;
-        }
-      }
-    }
-
+  &:hover {
     .image {
-      &::before {
-        content: "";
-        width: 100%;
-        height: 0;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 1;
-        transition: height 0.3s linear;
-        background-color: rgba(0, 0, 0, 0.25);
-      }
-    }
-
-    .text {
-      position: relative;
-
-      &::after {
-        content: "";
-        width: 100%;
-        height: 0;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: -1;
-        transition: height 0.3s linear;
-        background-color: $sencond-color;
+      img {
+        transform: scale(1.2);
       }
     }
   }
@@ -1384,7 +1333,7 @@ a {
   .image {
     position: relative;
     z-index: 1;
-
+    overflow: hidden;
     .tag {
       position: absolute;
       top: 10px;
@@ -1399,6 +1348,7 @@ a {
 
     img {
       width: 100%;
+      transition: all 0.4s ease-in-out;
     }
   }
 
@@ -1447,6 +1397,9 @@ a {
 
         span {
           font-weight: 700;
+          &.red {
+            color: #c21919;
+          }
         }
       }
     }
