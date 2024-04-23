@@ -9492,7 +9492,7 @@ nav.main-menu .menu > li ul.mega-submenu > li > a::before {
   }
 }
 .p-footer .foot-top {
-  background-color: #FFA800;
+  background-color: #ffa800;
 }
 .p-footer .foot-top .box_content {
   display: grid;
@@ -9625,8 +9625,11 @@ nav.main-menu .menu > li ul.mega-submenu > li > a::before {
 .p-footer .foot-bottom .box_information {
   background-color: #0C2D62;
   width: 100%;
-  padding: 30px 25px;
-  margin-top: -50px;
+  padding: 0px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 @media (max-width: 600px) {
   .p-footer .foot-bottom .box_information {
@@ -9744,14 +9747,10 @@ nav.main-menu .menu > li ul.mega-submenu > li > a::before {
   transition: all 0.3s linear;
 }
 .p-footer .foot-bottom .item-maps {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  margin-bottom: 40px;
-}
-@media (max-width: 600px) {
-  .p-footer .foot-bottom .item-maps {
-    grid-template-columns: 1fr;
-  }
+  padding: 15px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .p-footer .foot-end {
   border-top: 1px solid #fff;
@@ -9777,8 +9776,6 @@ nav.main-menu .menu > li ul.mega-submenu > li > a::before {
   text-align: right;
   height: 250px;
   width: 500px;
-  margin-top: -30px;
-  padding-left: 50px;
 }
 @media (max-width: 600px) {
   .mapouter {
