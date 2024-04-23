@@ -9044,7 +9044,7 @@ nav.main-menu .menu > li ul.mega-submenu > li > a::before {
 }
 .isMobile .p-header .search-tools,
 .isMobile .p-header .logo-column {
-  display: block;
+  display: block !important;
   width: auto !important;
 }
 .p-header.is-sticky {
@@ -9079,6 +9079,11 @@ nav.main-menu .menu > li ul.mega-submenu > li > a::before {
 .p-header .header-container {
   position: relative;
   background-color: #027EC4;
+}
+.isMobile .p-header .header-container {
+  background-color: #fff;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 .p-header .header-container .row {
   align-items: center;
@@ -9176,6 +9181,9 @@ nav.main-menu .menu > li ul.mega-submenu > li > a::before {
   font-size: 24px;
   color: #fff;
   transition: all 0.3s ease-in-out;
+}
+.isMobile .p-header .header-container .search-tools-box .icon-search i {
+  color: #027EC4;
 }
 .p-header .header-container .search-tools-box .search-tools {
   position: relative;
@@ -9613,6 +9621,11 @@ nav.main-menu .menu > li ul.mega-submenu > li > a::before {
 .p-footer .foot-bottom {
   background-color: #027EC4;
 }
+@media (max-width: 600px) {
+  .p-footer .foot-bottom {
+    padding-top: 10px;
+  }
+}
 .p-footer .foot-bottom .box_content_info {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -9633,7 +9646,7 @@ nav.main-menu .menu > li ul.mega-submenu > li > a::before {
 }
 @media (max-width: 600px) {
   .p-footer .foot-bottom .box_information {
-    margin-top: 20px;
+    padding: 35px 25px;
   }
 }
 .p-footer .foot-bottom .box_information .head-title .title {

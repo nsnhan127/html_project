@@ -117,6 +117,9 @@
   }
   .foot-bottom {
     background-color: $primary-color;
+    @include maxscreenw(600px) {
+      padding-top: 10px;
+    }
     .box_content_info {
       display: grid;
       grid-template-columns: 1fr 2fr;
@@ -134,7 +137,7 @@
       align-items: center;
       justify-content: center;
       @include maxscreenw(600px) {
-        margin-top: 20px;
+        padding: 35px 25px;
       }
       .head-title {
         .title {
