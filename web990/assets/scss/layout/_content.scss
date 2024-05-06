@@ -474,7 +474,8 @@
 
         .sub-banner {
           position: relative;
-
+          max-height: 180px;
+          overflow: hidden;
           .image {
             height: auto;
 
@@ -758,7 +759,6 @@
         .section-content {
           .content {
             padding-top: 20px;
-
             img {
               height: auto;
               border-radius: 10px;
@@ -770,7 +770,6 @@
             }
 
             p {
-              text-align: justify;
               margin: 10px 0;
             }
           }

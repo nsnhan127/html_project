@@ -181,7 +181,7 @@ a {
 
         .slide-banner {
           overflow: hidden;
-          max-height: 100vh;
+          max-height: 80vh;
           margin-bottom: 20px;
 
           @include mydevice(phone) {
@@ -315,6 +315,13 @@ a {
                   }
                 }
               }
+            }
+            .img-bg {
+              height: 80vh;
+              width: 100%;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
             }
           }
         }
@@ -910,7 +917,7 @@ a {
             justify-content: center;
             border: 1px solid #0c2d62;
             border-radius: 10px;
-
+            padding-bottom: 5px;
             @include mydevice(mobile) {
               padding: 0 20px;
             }

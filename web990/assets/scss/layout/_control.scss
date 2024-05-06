@@ -744,7 +744,15 @@
 .gallery-3 {
   padding: 0 60px;
 }
-
+.error-txt {
+  padding-top: 5px;
+  margin: 0;
+  span {
+    color: red;
+    font-size: 12px;
+    font-style: italic;
+  }
+}
 .form-control {
   display: block;
   position: relative;
@@ -757,7 +765,9 @@
   padding: 10px 12px 10px 10px;
   background-color: #fff;
   border: 1px solid $third-color;
-
+  &.required {
+    border-color: red;
+  }
   &:focus {
     color: #495057;
     background-color: #fff;

@@ -7986,6 +7986,16 @@ a {
   padding: 0 60px;
 }
 
+.error-txt {
+  padding-top: 5px;
+  margin: 0;
+}
+.error-txt span {
+  color: red;
+  font-size: 12px;
+  font-style: italic;
+}
+
 .form-control {
   display: block;
   position: relative;
@@ -7998,6 +8008,9 @@ a {
   padding: 10px 12px 10px 10px;
   background-color: #fff;
   border: 1px solid #0C2D62;
+}
+.form-control.required {
+  border-color: red;
 }
 .form-control:focus {
   color: #495057;
@@ -10143,7 +10156,7 @@ a:focus {
 }
 #homePage .section_1 .top-search .slide-banner {
   overflow: hidden;
-  max-height: 100vh;
+  max-height: 80vh;
   margin-bottom: 20px;
 }
 .isPhone #homePage .section_1 .top-search .slide-banner {
@@ -10253,6 +10266,13 @@ a:focus {
 }
 #homePage .section_1 .top-search .slide-banner .item .interact .box-border .direction .default-btn {
   margin-left: 20px;
+}
+#homePage .section_1 .top-search .slide-banner .item .img-bg {
+  height: 80vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #homePage .section_2 {
   margin-bottom: 60px;
@@ -10779,6 +10799,7 @@ a:focus {
   justify-content: center;
   border: 1px solid #0c2d62;
   border-radius: 10px;
+  padding-bottom: 5px;
 }
 .isMobile #homePage .section_5 .box-partner .list-partner .item {
   padding: 0 20px;
@@ -11793,6 +11814,8 @@ a:focus {
 }
 .p-content.detail-service .section_1 .sub-banner {
   position: relative;
+  max-height: 180px;
+  overflow: hidden;
 }
 .p-content.detail-service .section_1 .sub-banner .image {
   height: auto;
@@ -12043,7 +12066,6 @@ a:focus {
   }
 }
 .p-content.detail-service .section_2 .section-content .content p {
-  text-align: justify;
   margin: 10px 0;
 }
 .p-content.detail-service .section_2 .section-content .description-product {
