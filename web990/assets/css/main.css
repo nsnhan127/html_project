@@ -10946,7 +10946,6 @@ a:focus {
 .item-news .image .border-image {
   overflow: hidden;
   position: relative;
-  height: 230px;
 }
 @media (max-width: 600px) {
   .item-news .image .border-image {
@@ -10960,17 +10959,19 @@ a:focus {
 .item-news .image .border-image .tag-time {
   position: absolute;
   right: 0;
-  bottom: 0;
-  background-color: #ffa800;
+  top: 0;
+  background-color: #027EC4;
   padding: 10px;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  border-bottom-left-radius: 15px;
 }
 .item-news .image .border-image .tag-time span {
   color: #fff;
+  font-weight: 600;
 }
 .item-news .content {
   margin-top: 10px;
@@ -10991,6 +10992,7 @@ a:focus {
   width: 100%;
   line-height: 20px;
   margin-bottom: 20px;
+  font-size: 13px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -ms-box-orient: vertical;
