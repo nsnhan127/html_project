@@ -783,7 +783,7 @@ a {
       background-repeat: no-repeat;
       position: relative;
       margin-bottom: 60px;
-      @include mydevice (mobile){
+      @include mydevice(mobile) {
         padding-bottom: 7em;
       }
       &::before {
@@ -858,7 +858,7 @@ a {
           margin: 15px;
           border-radius: 10px;
           transition: all 0.3s ease-in-out;
-          @include mydevice (mobile){
+          @include mydevice(mobile) {
             padding: 10px;
           }
           &:hover {
@@ -883,7 +883,7 @@ a {
             justify-content: center;
             overflow: hidden;
             position: relative;
-            @include mydevice (mobile){
+            @include mydevice(mobile) {
               height: 150px;
             }
             &::after {
@@ -913,7 +913,7 @@ a {
               font-weight: 600;
               margin-bottom: 5px;
               transition: all 0.3s ease-in-out;
-              @include mydevice (mobile){
+              @include mydevice(mobile) {
                 font-size: 18px;
               }
             }
@@ -1234,8 +1234,8 @@ a {
     width: 100%;
     font-size: 13px;
     line-height: normal;
-    max-height: 50px;
-    height: 50px;
+    //max-height: 50px;
+    //height: 50px;
     text-align: justify;
     display: -webkit-box;
     box-orient: vertical;
@@ -1343,7 +1343,7 @@ a {
       -moz-line-clamp: 2;
       -ms-line-clamp: 2;
       line-clamp: 2;
-      @include mydevice (mobile){
+      @include mydevice(mobile) {
         font-size: 14px;
       }
     }
@@ -1354,7 +1354,7 @@ a {
       padding: 6px 20px;
       margin-bottom: 10px;
       display: inline-block;
-      @include mydevice (mobile){
+      @include mydevice(mobile) {
         padding: 5px 10px;
       }
     }
@@ -1372,7 +1372,7 @@ a {
       -moz-line-clamp: 3;
       -ms-line-clamp: 3;
       line-clamp: 3;
-      @include mydevice (mobile){
+      @include mydevice(mobile) {
         font-size: 12px;
       }
     }
