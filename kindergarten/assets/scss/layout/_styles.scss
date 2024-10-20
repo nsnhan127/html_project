@@ -1,0 +1,258 @@
+body {
+  @include myscrollbar;
+}
+.container {
+  @include minscreenw(1200px) {
+    width: 1200px;
+    max-width: 1200px;
+  }
+}
+.social-icons {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+
+  li {
+    margin: 0;
+    border: none;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+    border: 2px solid #fff;
+    margin-left: 10px;
+    transition: all 0.2s linear;
+    transform: translateY(0);
+    &:hover {
+      transform: translateY(-5px);
+    }
+    &.ttm-social-zalo {
+      background-color: #3197eb;
+    }
+    &.ttm-social-facebook {
+      background-color: #3143eb;
+    }
+    &.ttm-social-utube {
+      background-color: #cc3030;
+      i {
+        font-size: 18px !important;
+      }
+    }
+    &.ttm-social-mail {
+      background-color: #ab653d;
+    }
+    a {
+      text-decoration: none;
+      margin: 0;
+      border-radius: 0;
+      i {
+        color: #fff;
+        font-size: 16px;
+        transition: all 0.5s ease-in-out;
+      }
+      img {
+        width: 20px;
+      }
+    }
+  }
+}
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+* {
+  text-decoration: none;
+}
+.freeze {
+  overflow: hidden !important;
+}
+html {
+  scroll-behavior: smooth;
+}
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+}
+.visible-lg,
+.visible-lg-block,
+.visible-lg-inline,
+.visible-lg-inline-block,
+.visible-md,
+.visible-md-block,
+.visible-md-inline,
+.visible-md-inline-block,
+.visible-sm,
+.visible-sm-block,
+.visible-sm-inline,
+.visible-sm-inline-block,
+.visible-xs,
+.visible-xs-block,
+.visible-xs-inline,
+.visible-xs-inline-block {
+  display: none !important;
+}
+.full-width {
+  width: 100% !important;
+}
+.txt-normal {
+  font-size: 18px;
+  color: #fff;
+  line-height: 21px;
+  font-weight: 700;
+  margin: 0;
+}
+.theme-blue {
+  background-color: #034ea2 !important;
+  color: #fff !important;
+
+  h3 {
+    color: #fff !important;
+  }
+
+  .triangle {
+    border-color: #034ea2 !important;
+  }
+}
+.ovh {
+  overflow: hidden !important;
+  &::before {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.h3,
+h3 {
+  font-size: 27px;
+  font-weight: 200;
+  color: #000;
+}
+.h4,
+.login-form__label,
+h4 {
+  font-size: 24px;
+  font-weight: 300;
+  color: #000;
+}
+.section {
+  padding-bottom: 30px;
+  @include mydevice(mobile) {
+    margin-bottom: 30px !important;
+  }
+}
+
+.gallery-home {
+  .item {
+    img {
+      width: 100%;
+    }
+  }
+  .item__txt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    &_1,
+    &_2,
+    .btn_gr {
+      visibility: hidden;
+
+      &.vis {
+        visibility: visible !important;
+      }
+    }
+
+    &_1 {
+      font-size: 50px;
+      font-weight: 700;
+      @include mydevice(mobile) {
+        font-size: 30px;
+      }
+      @include mydevice(phone) {
+        font-size: 16px;
+      }
+    }
+
+    &_2 {
+      font-size: 34px;
+      @include mydevice(mobile) {
+        font-size: 24px;
+      }
+      @include mydevice(phone) {
+        font-size: 12px;
+      }
+    }
+
+    .btn_gr {
+      margin-top: 24px;
+      @include mydevice(phone) {
+        margin-top: 12px;
+      }
+    }
+
+    .mybtn {
+      border-color: #fff;
+      color: #fff;
+      // font-size: 24px;
+      background: none;
+      padding: 0.5em 2em;
+
+      &:hover {
+        background-color: $site-color-1;
+        color: #fff;
+        border-color: $site-color-1;
+      }
+      @include mydevice(mobile) {
+        font-size: 16px;
+      }
+      @include mydevice(phone) {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .owl-nav {
+    visibility: hidden;
+    transition: all 0.5s;
+    @include mydevice(mobile) {
+      display: none;
+    }
+    .owl-next,
+    .owl-prev {
+      //  width: 46px;
+      //height: 70px;
+    }
+
+    .owl-prev {
+      left: 2%;
+      //background-image: url("../images/arrow_left_2.png");
+    }
+
+    .owl-next {
+      right: 2%;
+      //background-image: url("../images/arrow_right_2.png");
+    }
+  }
+
+  &:hover {
+    .owl-nav {
+      visibility: visible;
+    }
+  }
+}

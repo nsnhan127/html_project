@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,500i,700,900&subset=vietnamese");
+
+// main font of website
+$site-font-1: "Baloo", sans-serif;
+$site-font-2: "Material", sans-serif;
+$site-font-3: "Materialv2", sans-serif;
+// main color of website
+$site-color-1: #000;
+$site-color-2: #049be5;
+$site-color-3: #cb1e33;
+
+$primary-color: #e9037d;
+$sencond-color: #de4898;
+$third-color: #271344;
+$light-brown: rgba(0, 0, 0, 0.2);
+$pastel-green: #dde6d5;
+$pastel-pink: #f8d2c5;
+$young-green: #a3b899;
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+}
+@font-face {
+  font-family: "CiscoSansTT";
+  src: url("../fonts/CiscoSansTT.eot");
+  src: url("../fonts/CiscoSansTT.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/CiscoSansTT.woff2") format("woff2"),
+    url("../fonts/CiscoSansTT.woff") format("woff"),
+    url("../fonts/CiscoSansTT.ttf") format("truetype"),
+    url("../fonts/CiscoSansTT.svg#CiscoSansTT") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CiscoSansTT";
+  src: url("../fonts/CiscoSansTT_1.eot");
+  src: url("../fonts/CiscoSansTT_1.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/CiscoSansTT_1.woff2") format("woff2"),
+    url("../fonts/CiscoSansTT_1.woff") format("woff"),
+    url("../fonts/CiscoSansTT_1.ttf") format("truetype"),
+    url("../fonts/CiscoSansTT_1.svg#CiscoSansTT") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CiscoSansTT";
+  src: url("../fonts/CiscoSansTT_2.eot");
+  src: url("../fonts/CiscoSansTT_2.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/CiscoSansTT_2.woff2") format("woff2"),
+    url("../fonts/CiscoSansTT_2.woff") format("woff"),
+    url("../fonts/CiscoSansTT_2.ttf") format("truetype"),
+    url("../fonts/CiscoSansTT_2.svg#CiscoSansTT") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Material";
+  src: url("../fonts/Material-Design-Iconic-Font.eot");
+  src: url("../fonts/Material-Design-Iconic-Font.eot")
+      format("embedded-opentype"),
+    url("../fonts/Material-Design-Iconic-Font.woff2") format("woff2"),
+    url("../fonts/Material-Design-Iconic-Font.woff") format("woff"),
+    url("../fonts/Material-Design-Iconic-Font.ttf") format("truetype"),
+    url("../fonts/Material-Design-Iconic-Font.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Materialv2";
+  src: url("../fonts/material/fonts/materialdesignicons-webfont.eot");
+  src: url("../fonts/material/fonts/materialdesignicons-webfont.eot")
+      format("embedded-opentype"),
+    url("../fonts/material/fonts/materialdesignicons-webfont.woff2")
+      format("woff2"),
+    url("../fonts/material/fonts/materialdesignicons-webfont.woff")
+      format("woff"),
+    url("../fonts/material/fonts/materialdesignicons-webfont.ttf")
+      format("truetype"),
+    url("../fonts/material/fonts/materialdesignicons-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Baloo";
+  src: url("../fonts/Baloo_2/static/Baloo2-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.m-default {
+  color: $primary-color;
+}
+.m1 {
+  color: $light-brown;
+}
+.m2 {
+  color: $young-green;
+}
+.m3 {
+  color: $pastel-green;
+}
+.m4 {
+  color: $pastel-pink;
+}
+.bg-m1 {
+  background-color: $light-brown;
+}
+.bg-m2 {
+  background-color: $young-green;
+}
+.bg-m3 {
+  background-color: $pastel-green;
+}
+.bg-m4 {
+  background-color: $pastel-pink;
+}
+
+.bd-m1 {
+  border-color: $light-brown !important;
+}
+.bd-m2 {
+  border-color: $young-green !important;
+}
+.bd-m3 {
+  border-color: $pastel-green !important;
+}
+.bd-m4 {
+  border-color: $pastel-pink !important;
+}

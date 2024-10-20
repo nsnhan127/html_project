@@ -445,10 +445,18 @@
         margin-bottom: 20px;
 
         .item {
-          max-height: 350px;
-
+          height: 350px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+          a {
+            display: flex;
+            justify-content: center;
+          }
           img {
-            width: 100%;
+            width: 70%;
+            border-radius: 0px !important;
           }
         }
       }
@@ -456,10 +464,14 @@
       .slide-nav {
         .item {
           margin-right: 5px;
-          max-height: 120px;
-
+          height: 150px;
+          display: flex;
+          justify-content: center;
+          border: 1px solid;
+          cursor: pointer;
           img {
             width: 100%;
+            border-radius: 0px !important;
           }
         }
       }
@@ -474,14 +486,13 @@
 
         .sub-banner {
           position: relative;
-          max-height: 180px;
-          overflow: hidden;
+          //max-height: 200px;
+          //overflow: hidden;
           .image {
-            height: auto;
-
-            img {
-              width: 100%;
-            }
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 40vh;
           }
 
           .head-title {
@@ -606,6 +617,7 @@
                 &.prize {
                   font-size: 18px;
                   span {
+                    font-weight: 600;
                     color: #ff0000;
                   }
                 }
@@ -759,6 +771,14 @@
         .section-content {
           .content {
             padding-top: 20px;
+            p {
+              video {
+                @include mydevice(mobile) {
+                  width: 100% !important;
+                  height: auto;
+                }
+              }
+            }
             img {
               height: auto;
               border-radius: 10px;
@@ -778,20 +798,11 @@
             .title {
               width: 40%;
               font-weight: bold;
-              color: #ffa800;
+              color: $primary-color;
               font-size: 18px;
               padding-bottom: 5px;
               margin: 0;
               position: relative;
-              &::after {
-                content: "";
-                position: absolute;
-                bottom: 0px;
-                left: 0px;
-                width: 40%;
-                height: 2px;
-                background-color: #000;
-              }
             }
           }
         }

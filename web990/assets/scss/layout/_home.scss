@@ -62,6 +62,10 @@ a {
 .header-title-news {
   border-left: 5px solid $sencond-color;
   padding-left: 20px;
+  h1 {
+    font-size: 20px !important;
+    margin-bottom: 8px;
+  }
 }
 .text-bold {
   text-transform: uppercase;
@@ -124,7 +128,7 @@ a {
       text-align: left !important;
     }
     .txt-color {
-      color: $sencond-color;
+      color: $primary-color;
     }
 
     @include mydevice(tablet) {
@@ -187,6 +191,7 @@ a {
           @include mydevice(phone) {
             margin-bottom: 0px;
             border-radius: 0px;
+            max-height: 30vh;
           }
 
           .slick-next {
@@ -322,6 +327,9 @@ a {
               background-position: center;
               background-repeat: no-repeat;
               background-size: cover;
+              @include mydevice(mobile) {
+                height: 30vh;
+              }
             }
           }
         }
@@ -519,7 +527,8 @@ a {
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-
+      position: relative;
+      z-index: 99;
       @include mydevice(phone) {
         padding: 30px 0 50px 0;
       }
@@ -906,6 +915,9 @@ a {
         }
 
         .list-partner {
+          .slick-track {
+            padding-bottom: 10px;
+          }
           .item {
             background-color: #fff;
             margin: 0 20px;
@@ -917,16 +929,18 @@ a {
             justify-content: center;
             border: 1px solid #0c2d62;
             border-radius: 10px;
-            padding-bottom: 5px;
+            //padding-bottom: 5px;
             @include mydevice(mobile) {
               padding: 0 20px;
             }
 
             a {
               text-decoration: none;
-
+              display: flex;
+              justify-content: center;
+              align-items: center;
               img {
-                width: 100%;
+                width: 80%;
               }
             }
           }
@@ -1095,14 +1109,13 @@ a {
     .border-image {
       overflow: hidden;
       position: relative;
-      //height: 230px;
-
-      @include maxscreenw(600px) {
-        height: auto;
-      }
+      height: 230px;
+      display: flex;
+      justify-content: center;
 
       img {
         width: 100%;
+        height: 100%;
         transition: all 0.4s linear;
       }
 
@@ -1304,7 +1317,8 @@ a {
 
 .item-project {
   margin-bottom: 20px;
-
+  background-color: #fff;
+  box-shadow: 2px 2px 7px 2px rgba(143, 142, 142, 0.25);
   &.small-item {
     padding: 10px;
     margin-bottom: 0;
@@ -1357,16 +1371,12 @@ a {
 
     img {
       width: 100%;
+      max-height: 220px;
       transition: all 0.4s ease-in-out;
     }
   }
 
   .text {
-    background-color: #fff;
-    box-shadow: 2px 2px 7px 2px rgba(143, 142, 142, 0.25);
-    position: relative;
-    z-index: 2;
-    margin: -51px 45px 5px 0;
     padding: 10px 15px;
 
     @include maxscreenw(600px) {
@@ -1423,7 +1433,101 @@ a {
     }
   }
 }
+.item-product {
+  background-color: #fff;
+  box-shadow: 2px 2px 7px 2px rgba(143, 142, 142, 0.25);
+  margin-bottom: 20px;
+  &:hover {
+    .image {
+      img {
+        transform: scale(1.2);
+      }
+    }
+  }
 
+  .image {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mydevice(mobile) {
+    }
+    .tag {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: 5px 15px;
+      background-color: #385da9;
+      border-radius: 15px;
+      color: #fff;
+      font-size: 12px;
+      z-index: 9;
+    }
+
+    img {
+      width: 100%;
+      transition: all 0.4s ease-in-out;
+    }
+  }
+
+  .text {
+    padding: 10px 20px 5px;
+    @include maxscreenw(600px) {
+      margin: 0;
+      padding: 10px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .title {
+      color: $primary-color;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.4;
+      margin-bottom: 5px;
+      height: 45px;
+      transition: all 0.3s linear;
+      -webkit-box-orient: vertical;
+      -moz-box-orient: vertical;
+      -ms-box-orient: vertical;
+      box-orient: vertical;
+      -webkit-line-clamp: 2;
+      -moz-line-clamp: 2;
+      -ms-line-clamp: 2;
+      line-clamp: 2;
+    }
+
+    .detail {
+      p {
+        margin-bottom: 3px;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.5);
+
+        span {
+          font-weight: 700;
+          font-size: 16px;
+          &.red {
+            color: #c21919;
+          }
+        }
+      }
+    }
+  }
+
+  .text-project-home {
+    .title {
+      @include maxscreenw(600px) {
+        font-size: 12px;
+        line-height: normal;
+      }
+    }
+  }
+}
 #wrapper {
   @include mydevice(phone) {
     overflow-x: hidden;
@@ -1512,7 +1616,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-height: 130px;
+    overflow: hidden;
+    max-height: 100px;
 
     &.no-pad {
       padding: 0 !important;

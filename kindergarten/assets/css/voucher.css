@@ -1,0 +1,213 @@
+button:disabled {
+  background: rgba(0, 0, 0, 0.1) !important;
+  cursor: default !important;
+}
+
+.box-voucher {
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+}
+.box-voucher .box-voucher-head {
+  background: rgba(0, 0, 0, 0.03);
+  padding: 1.75rem 2.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+.box-voucher .box-voucher-head .title-wrapper {
+  color: rgba(0, 0, 0, 0.87);
+  cursor: default;
+}
+.box-voucher .box-voucher-head .input-with-validator-wrapper {
+  margin: 0 0.5rem 0 0.875rem;
+  position: relative;
+}
+.box-voucher .box-voucher-head .input-with-validator-wrapper .input-with-validator {
+  width: 25.875rem;
+  height: 3.75rem;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  position: relative;
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  box-sizing: border-box;
+  box-shadow: inset 0 2px 0 0 rgba(0, 0, 0, 0.02);
+  color: #222;
+  padding: 10px;
+  transition: border-color 0.1s ease;
+}
+.box-voucher .box-voucher-head .input-with-validator-wrapper .input-with-validator input {
+  flex: 1;
+  font-size: 14px;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  border: 0;
+  text-transform: uppercase;
+}
+.box-voucher .box-voucher-head .btnvoucher {
+  background: rgba(0, 0, 0, 0.1);
+  width: 6.25rem;
+  height: 3.75rem;
+  text-align: center;
+  border-radius: 0.125rem;
+  outline: none;
+  color: #fff;
+  border: 0;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.09);
+  background: #ee4d2d;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.box-voucher .box-voucher-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.box-voucher .box-voucher-content .voucher-items {
+  padding-right: 10px;
+  width: 50%;
+  margin-bottom: 20px;
+  height: 118px;
+  box-sizing: border-box;
+}
+.box-voucher .box-voucher-content .voucher-items .n-context {
+  height: 100%;
+}
+.box-voucher .box-voucher-content .voucher-items .n-context .v-context {
+  height: 100%;
+  box-shadow: 0.125rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.07);
+  padding: 0;
+  display: flex;
+  overflow: hidden;
+  border-radius: 0.125rem;
+  position: relative;
+  overflow: visible;
+}
+.box-voucher .box-voucher-content .voucher-items .n-context .v-context .v-bx1 {
+  width: 30%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-voucher .box-voucher-content .voucher-items .n-context .v-context .v-bx1 .b-title {
+  color: #fff;
+  font-size: 14px;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  text-transform: uppercase;
+  text-align: center;
+}
+.box-voucher .box-voucher-content .voucher-items .n-context .v-context .v-bx1 .b-border {
+  position: absolute;
+  top: 0.3125rem;
+  left: 0;
+  width: 0.25rem;
+  height: calc(100% - 0.4375rem);
+  background: radial-gradient(circle at 0, at 0.25rem, transparent 0, transparent 0.1875rem, #00bfa5 0);
+  background: radial-gradient(circle at 0 0.25rem, transparent 0, transparent 0.1875rem, #00bfa5 0);
+  background-size: 0.25rem 0.625rem;
+  background-repeat: repeat-y;
+}
+.box-voucher .box-voucher-content .voucher-items .n-context .v-context .v-bx1 .b-border:before {
+  content: "";
+  position: absolute;
+  top: -0.3125rem;
+  width: 100%;
+  height: 0.3125rem;
+  background: #00bfa5;
+  border-radius: 0.125rem 0 0 0;
+}
+.box-voucher .box-voucher-content .voucher-items .n-context .v-context .v-bx1 .b-border:after {
+  content: "";
+  position: absolute;
+  bottom: -0.125rem;
+  left: 0;
+  width: 100%;
+  height: 0.125rem;
+  background: #00bfa5;
+  border-radius: 0 0 0 0.125rem;
+}
+.box-voucher .box-voucher-content .voucher-items .n-context .v-context .v-bx2 {
+  width: 70%;
+  position: relative;
+  display: flex;
+  background: #fff;
+  border-radius: 0 0.125rem 0.125rem 0;
+  border: 1px solid #e8e8e8;
+  border-left: 0 solid transparent;
+  min-width: 0;
+}
+.box-voucher .box-voucher-content .voucher-items .n-context .v-context .v-bx2 .b-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  max-width: 100%;
+  padding: 0 0.75rem;
+  min-width: 0;
+}
+.box-voucher .box-voucher-content .voucher-items .n-context .v-context .v-bx2 .b-content .b1 {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.87);
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  max-height: 2.6875rem;
+}
+.box-voucher .box-voucher-content .voucher-items .n-context .v-context .v-bx2 .b-content .b2 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  color: rgba(0, 0, 0, 0.54);
+}
+.box-voucher .box-voucher-content .voucher-items .n-context .v-context .v-bx2 .b-content .b3 {
+  color: #ee4d2d;
+}
+.box-voucher .box-voucher-content .voucher-items .n-context .v-context .v-bx2 .b-content a {
+  background: #ee4d2d;
+  color: #fff;
+  cursor: pointer;
+  padding: 3px 10px;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  font-size: 12px;
+}
+.box-voucher .box-voucher-content .voucher-items .n-context .v-context .v-bx3 {
+  left: -0.1875rem;
+  top: 1rem;
+  position: absolute;
+  display: flex;
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.125rem 0.125rem 0.125rem 0;
+  color: #fff;
+  font-size: 1rem;
+}
+.box-voucher .box-voucher-content .voucher-items .n-context .v-context .v-bx3:after {
+  border-left: 0.1875rem solid #dfa400;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 1px;
+  top: calc(100% + 1px);
+  border: 0.1875rem solid transparent;
+  transform: rotate(-45deg) translate(50%, -50%);
+}
+.box-voucher .box-voucher-content .voucher-items .n-context .v-context .br-1 {
+  background: linear-gradient(90deg, transparent 0, transparent 0.1875rem, #00bfa5 0);
+}
+.box-voucher .box-voucher-content .voucher-items .n-context .v-context .br-fb0 {
+  background: #fb0;
+}
