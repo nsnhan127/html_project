@@ -445,11 +445,14 @@
         margin-bottom: 20px;
 
         .item {
-          height: 350px;
+          height: 450px;
           display: flex;
           justify-content: center;
           align-items: center;
           overflow: hidden;
+          @include mydevice (mobile){
+            height: 200px;
+          }
           a {
             display: flex;
             justify-content: center;
@@ -457,71 +460,40 @@
           img {
             width: 70%;
             border-radius: 0px !important;
+            @include mydevice (mobile){
+              width: 100% !important;
+              max-width: 100% !important;
+              margin: 0 !important;
+            }
           }
         }
       }
 
       .slide-nav {
         .item {
-          margin-right: 5px;
+          margin: 0 10px;
           height: 150px;
           display: flex;
           justify-content: center;
           border: 1px solid;
           cursor: pointer;
           img {
-            width: 100%;
+            margin: 0 !important;
+            width: 100% !important;
+            max-width: 100% !important;
             border-radius: 0px !important;
           }
         }
       }
     }
-
+    .box-content {
+      text-align: center;
+    }
     .section {
       &_1 {
         @include maxscreenw(600px) {
           margin-bottom: 0 !important;
           padding-bottom: 20px;
-        }
-
-        .sub-banner {
-          position: relative;
-          //max-height: 200px;
-          //overflow: hidden;
-          .image {
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 40vh;
-          }
-
-          .head-title {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: rgba(0, 0, 0, 0.3);
-            @include mydevice(mobile) {
-              display: none;
-            }
-            .title {
-              color: #fff;
-              text-transform: uppercase;
-              font-size: 28px;
-              font-weight: 700;
-
-              @include maxscreenw(600px) {
-                font-size: 16px;
-                margin: 0;
-              }
-            }
-          }
         }
       }
 
@@ -538,11 +510,7 @@
           margin-top: 20px;
 
           &.details {
-            grid-template-columns: 2fr 1fr !important;
-
-            @include mydevice(mobile) {
-              grid-template-columns: 1fr !important;
-            }
+            display: block;
           }
 
           @include maxscreenw(600px) {
@@ -755,23 +723,12 @@
           }
         }
 
-        .top-title {
-          .article-title {
-            text-align: left;
-            color: $third-color;
-
-            @include maxscreenw(600px) {
-              //text-align: center;
-              font-size: 18px;
-              line-height: 1.5;
-            }
-          }
-        }
-
         .section-content {
           .content {
             padding-top: 20px;
             p {
+              font-size: 18px;
+              text-align: start;
               video {
                 @include mydevice(mobile) {
                   width: 100% !important;
@@ -782,8 +739,8 @@
             img {
               height: auto;
               border-radius: 10px;
-              max-width: 100%;
-
+              max-width: 60%;
+              margin: 10px 0;
               @include maxscreenw(600px) {
                 width: 100%;
               }
@@ -916,7 +873,7 @@
 
                   a {
                     transition: all 0.3s linear;
-                    font-size: 13px;
+                    font-size: 15px;
                     font-weight: 700;
                     text-decoration: none;
                     color: #595959;
@@ -1521,13 +1478,10 @@
           .list-project {
             margin: 40px 0;
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 20px;
-
+            grid-template-columns: repeat(4, 1fr);
             @include maxscreenw(700px) {
               grid-template-columns: repeat(2, 1fr);
             }
-
             @include maxscreenw(470px) {
               margin-top: 20px;
               grid-template-columns: repeat(1, 1fr);
@@ -1661,7 +1615,7 @@
   transition: all 0.4s ease-in-out;
   border-radius: 15px;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
 
   @include mydevice(phone) {
@@ -1731,6 +1685,8 @@
 
   &.btn-form {
     background-color: $third-color;
+    border-radius: 10px;
+    border-color: $third-color;
     color: #fff;
     width: 100%;
 
@@ -1739,14 +1695,14 @@
     }
 
     &:focus {
-      background-color: $third-color;
+      background-color: $primary-color;
       outline: 0 !important;
     }
 
     &:hover {
-      background-color: $sencond-color;
-      border-color: $sencond-color;
-      color: $third-color;
+      background-color: $primary-color;
+      border-color: $primary-color;
+      color: #fff;
     }
   }
 
@@ -1819,6 +1775,7 @@
     &::after {
       color: $sencond-color;
       top: 15px;
+      right: 12px;
     }
 
     &:hover {
@@ -1872,7 +1829,7 @@
     font: normal normal normal 14px/1 "Materialv2";
     font-size: 15px;
     position: absolute;
-    top: 16px;
+    top: 15px;
     right: 18px;
     color: $primary-color;
     transition: all 0.3s linear;

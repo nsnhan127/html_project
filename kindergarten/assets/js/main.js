@@ -310,7 +310,7 @@ $("#slidenav").slick({
   speed: 800,
   asNavFor: ".slide-for",
   focusOnSelect: true,
-  slidesToShow: 4,
+  slidesToShow: 5,
   slidesToScroll: 1,
   responsive: [
     {

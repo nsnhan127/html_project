@@ -670,12 +670,12 @@
     @include maxscreenw(480px) {
       margin-bottom: 10px;
     }
-
     span {
       display: table-cell;
-      width: 30px;
-      height: 30px;
+      width: 40px;
+      height: 40px;
       font-weight: 400;
+      border-radius: 100%;
       box-sizing: border-box;
       border: none;
       vertical-align: middle;
